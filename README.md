@@ -47,11 +47,11 @@ This page displays all the books that have been added to the collection, with da
   cd repositoryname
 
 2. Set up MariaDB Database:
-Open MariaDB in your terminal or use a database management tool (e.g., phpMyAdmin).
-Create a database for the collection:
-
-  CREATE DATABASE narku_collection;
-  Create a table for books:
+- Open MariaDB in your terminal or use a database management tool (e.g., phpMyAdmin).
+- Create a database for the collection:
+  `CREATE DATABASE narku_collection;`
+- Create a table for books:
+    ```
     USE narku_collection;
     CREATE TABLE books (
       id INT PRIMARY KEY AUTO_INCREMENT,
@@ -60,7 +60,7 @@ Create a database for the collection:
       year_published INT,
       publisher VARCHAR(255)
     );
-    
+    ```
 3. Update Database Connection in PHP:
 Go to the config.php file in the repository and update the database connection settings with your MariaDB credentials:
   $host = 'localhost';
@@ -72,7 +72,7 @@ Go to the config.php file in the repository and update the database connection s
 If using XAMPP, start Apache and MySQL.
 Place the project files in the htdocs folder of your XAMPP installation or the appropriate directory for your server.
 
-5.Access the Application:
+5. Access the Application:
 Open your browser and go to http://localhost/repositoryname.
 
 ## Usage
