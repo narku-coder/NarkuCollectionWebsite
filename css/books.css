@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes example {
+    0% {background-color: #DBF283;}
+    50% {background-color: #83DBF2;}
+    100% {background-color: #F283DB;}
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 5px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-type: none;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+    flex: 1;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff7f50; /* Highlight on hover */
+}
+
+.active {
+    color: black;
+  }
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between columns */
+    height: 100vh;
+}
+
+/* Left and right column styles */
+.form, .table {
+    background-color: #632727;
+    padding: 10px;
+    flex: 50%; /* Each column takes up about half the width */
+    border: 1px solid #ddd;
+}
+
+.form h2, .table h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.formList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 2.5em;
+    border: 3px dashed red;
+  }
+
+  /*
+.formList li
+{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}*/
+
+.formList label,
+.formList input{
+    width: 100%;
+}
+
+.formList button {
+    width: 35%;
+}
+
+th
+{
+    background-color: #1E84B2;
+    color: #B24C1E;
+    text-align: center;
+}
+
+tr
+{
+    background-color: #17E6A3;
+    color: #E6175A;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 10px;
+  }
+/* Make the layout responsive for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .form, .table {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

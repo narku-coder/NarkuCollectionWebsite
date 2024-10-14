@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes example {
+    0% {background-color: #DBF283;}
+    50% {background-color: #83DBF2;}
+    100% {background-color: #F283DB;}
+  }
+  
+
+/* Body Styling with Gradient Background */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #1E84B2, #B21E84, #84B21E);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Audio Control Styling */
+audio {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Header Section Styling */
+.header {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(177, 18, 18, 0.5);
+    padding: 10px 0;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Navigation Bar Styling */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    list-style-type: none;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0 10px;
+    flex: 1;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff7f50; /* Highlight on hover */
+}
+
+.active {
+    color: black;
+  }
+
+
+main h2 {
+    font-size: 2em;
+}
+
+main p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    max-width: 600px;
+}
+
+/* Flex Container Style */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered Div Style */
+.center-section {
+    width: 60%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: lightcoral;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    main h2 {
+        font-size: 1.8em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+}
