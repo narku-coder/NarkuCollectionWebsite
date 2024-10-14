@@ -63,14 +63,14 @@ This page displays all the books that have been added to the collection, with da
     ```
 3. Update Database Connection in PHP:
 Go to the config.php file in the repository and update the database connection settings with your MariaDB credentials:
-  $host = 'localhost';
-  $db = 'narku_collection';
-  $user = 'yourusername';
-  $password = 'yourpassword';
+  - $host = 'localhost';
+  - $db = 'narku_collection';
+  - $user = 'yourusername';
+  - $password = 'yourpassword';
 
 4. Start Your Local Server:
-If using XAMPP, start Apache and MySQL.
-Place the project files in the htdocs folder of your XAMPP installation or the appropriate directory for your server.
+- If using XAMPP, start Apache and MySQL.
+- Place the project files in the htdocs folder of your XAMPP installation or the appropriate directory for your server.
 
 5. Access the Application:
 Open your browser and go to http://localhost/repositoryname.
