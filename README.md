@@ -26,13 +26,16 @@ A website that tracks my personal collection of different items
 
 ## Screenshots
 ### Home Page
+![Screenshot of the homepage of the Narku Collection Website.](/NarkuWebPics/narkuHomePage.png)
 This page serves as the welcome page of the application, featuring the title and a navigation bar with different categories.
 
 ### Book Collection Form and Table
 - **Add a Book Form**
+![Screenshot of the book page of the Narku Collection Website without the table.](/NarkuWebPics/narkuBookPage.png)
 Users can fill out this form to add a book to their collection, which is then stored in the MariaDB database.
 
 - **Book List**
+![Screenshot of the book page of the Narku Collection Website including the table.](/NarkuWebPics/narkuBookPageWithTable.png)
 This page displays all the books that have been added to the collection, with data retrieved from the database and shown in a table format.
 
 ## Setup Instructions
